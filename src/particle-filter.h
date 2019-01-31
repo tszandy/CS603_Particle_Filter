@@ -13,7 +13,7 @@
 //  If not, see <http://www.gnu.org/licenses/>.
 //========================================================================
 /*!
-\file    slam_frontend.h
+\file    particle-filter.h
 \brief   COMPSCI603 Particle Filter Interface
 \author  Joydeep Biswas, (C) 2018
 */
@@ -25,8 +25,8 @@
 #include "eigen3/Eigen/Geometry"
 #include "shared/util/random.h"
 
-#ifndef __SLAM_FRONTEND_H__
-#define __SLAM_FRONTEND_H__
+#ifndef SRC_PARTICLE_FILTER_H_
+#define SRC_PARTICLE_FILTER_H_
 
 namespace COMPSCI603 {
 
@@ -116,4 +116,5 @@ class ParticleFilter {
 };
 }  // namespace COMPSCI603
 
-#endif   // __SLAM_FRONTEND_H__
+#endif   // SRC_PARTICLE_FILTER_H_
+
