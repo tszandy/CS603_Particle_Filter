@@ -1,4 +1,4 @@
-# cs603_particle_filter
+# CS603_Particle_Filter
 Particle filter for mobile robot localization using a laser rangefinder.
 
 ## Dependencies
@@ -32,3 +32,6 @@ Install [ROS](http://wiki.ros.org/ROS/Installation)
    ```
    rosrun rviz rviz -d particle-filter.rviz
    ```
+
+## Example Bag Files
+An example bag file for you to test with can be downloaded [here](https://drive.google.com/file/d/1kV19baRDWPyfWqOiFUMmgpJGSMssmtAm/view?usp=sharing). Please make sure you do not include the bag file with your submission.
