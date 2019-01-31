@@ -1,0 +1,24 @@
+<package>
+  <description brief="cs603_particle_filter">
+
+    Particle Filter Mobile Robot Localization
+    Assignment 1, COMPSCI 603
+
+  </description>
+  <name>cs603_particle_filter</name>
+  <author>Joydeep Biswas</author>
+  <license>MIT</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="std_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="visualization_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="roscpp"/>
+  <depend package="rosbag"/>
+  <depend package="tf"/>
+
+</package>
+
+
