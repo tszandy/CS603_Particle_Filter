@@ -6,7 +6,7 @@ Install [ROS](http://wiki.ros.org/ROS/Installation)
 
 And install additional dependencies
    ```
-   sudo apt-get install libgoogle-glog-dev cmake build-essential
+   sudo apt-get install cmake build-essential clang libgoogle-glog-dev  libgflags-dev libgtest-dev
    ```
 
 ## Clone This Repository
