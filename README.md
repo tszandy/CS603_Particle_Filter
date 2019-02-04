@@ -6,7 +6,7 @@ Install [ROS](http://wiki.ros.org/ROS/Installation)
 
 ## Clone This Repository
    ```
-   git clone --recurse-submodules [REPO URL]
+   git clone --recurse-submodules git@github.com:umass-amrl/CS603_Particle_Filter.git
    ```
    **IMPORTANT:** The `--recurse-submodules` is required to clone the shared
    library submodule.
