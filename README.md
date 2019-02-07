@@ -4,6 +4,11 @@ Particle filter for mobile robot localization using a laser rangefinder.
 ## Dependencies
 Install [ROS](http://wiki.ros.org/ROS/Installation)
 
+And install additional dependencies
+   ```
+   sudo apt-get install cmake build-essential clang libgoogle-glog-dev  libgflags-dev libgtest-dev
+   ```
+
 ## Clone This Repository
    ```
    git clone --recurse-submodules git@github.com:umass-amrl/CS603_Particle_Filter.git
