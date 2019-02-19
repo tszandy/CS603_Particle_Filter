@@ -5,6 +5,7 @@ MESSAGE(STATUS "Compiling COMPSCI603 Particle Filter")
 MESSAGE(STATUS "Using compiler: ${CMAKE_CXX_COMPILER}")
 MESSAGE(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
 MESSAGE(STATUS "Arch: ${CMAKE_SYSTEM_PROCESSOR}")
+SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/src/shared/")
 
 SET(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Werror")
 
@@ -29,18 +30,13 @@ SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 SET(libs roslib roscpp rosbag glog gflags amrl-shared-lib)
 
+INCLUDE_DIRECTORIES(src/shared)
 ADD_SUBDIRECTORY(src/shared)
 
 ROSBUILD_ADD_EXECUTABLE(particle-filter
                         src/particle-filter-main.cc
                         src/particle-filter.cc)
 TARGET_LINK_LIBRARIES(particle-filter
+                      amrl-shared-lib
                       ${libs})
 
-ADD_EXECUTABLE(unit-tests
-               src/testing-main.cc
-               src/particle-filter.cc)
-TARGET_LINK_LIBRARIES(unit-tests
-                      gtest
-                      pthread
-                      ${libs})
