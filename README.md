@@ -29,11 +29,15 @@ And install additional dependencies
    DO NOT RUN `catkin_build` or anything catkin-related.  
    
 ## Run 
+1. Before starting programs that use ros, you will need to start a roscore instance in a terminal that you keep open:
+     ```
+   roscore
+   ```
 1. To run the particle filter with a bag file named `myfile.bag`:
    ```
    ./bin/particle-filter --input myfile.bag
    ```
-1. To visualize the particle filter in RViz:
+1. To visualize the particle filter in RViz, run the following while also running your filter:
    ```
    rosrun rviz rviz -d particle-filter.rviz
    ```
