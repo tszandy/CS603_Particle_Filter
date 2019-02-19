@@ -31,7 +31,7 @@ set_debug:
 debug_all: | set_debug all
 
 clean:
-	rm -rf bin lib
+	rm -rf bin lib $(build_dir)
 
 $(build_dir)/CMakeLists.txt.copy: CMakeLists.txt Makefile
 	cd $(build_dir) && cmake -DCMAKE_BUILD_TYPE=$(build_type) \
