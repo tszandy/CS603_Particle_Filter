@@ -11,7 +11,7 @@ And install additional dependencies
 
 ## Clone This Repository
    ```
-   git clone --recurse-submodules git@github.com:umass-amrl/CS603_Particle_Filter.git
+   git clone --recurse-submodules git@github.com:tszandy/CS603_Particle_Filter.git
    ```
    **IMPORTANT:** The `--recurse-submodules` is required to clone the shared
    library submodule.
